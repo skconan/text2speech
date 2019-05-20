@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8" align="center">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="comment">Insert text 1 line 1 file</label>
+                <textarea name="text" class="form-control" rows="10" id="comment"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-block btn-primary">Convert</button>
+        </form>
+    </div>
+
+    <div class="col-md-2"></div>
+</div>
+
+{% endblock %}
