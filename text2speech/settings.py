@@ -122,6 +122,6 @@ USE_TZ = True
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
 
-MEDIA_ROOT= os.path.join(PROJECT_DIR, 'text2speech/media')
+MEDIA_ROOT= os.path.join(PROJECT_DIR, 'media')
 print(MEDIA_ROOT)
 MEDIA_URL= "/text2speech/media/"
