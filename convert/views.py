@@ -13,7 +13,8 @@ def convert(req):
             t = t.replace('.','')
             t = t.replace('"','')
             t = t.replace("'",'')
-            tts.save(settings.MEDIA_ROOT + "/" + t+'.mp3')
+            print("/"+settings.MEDIA_ROOT + "/" + t+'.mp3')
+            tts.save("/"+settings.MEDIA_ROOT + "/" + t+'.mp3')
             result.append([t,settings.MEDIA_URL + "/" + t+'.mp3'])
         context = {"result":result}
         template = 'download.html'
