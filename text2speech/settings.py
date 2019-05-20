@@ -25,7 +25,7 @@ SECRET_KEY = '&nq#48h&0xb@z94%2^a77h^jde$6y+vo)lr$!l2j3rkf@cl66y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["skconan.pythonanywhere.com"]
 
 
 # Application definition
