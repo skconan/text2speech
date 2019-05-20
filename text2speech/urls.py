@@ -21,6 +21,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('convert/', views.convert, name="convert"),
-    path('', views.convert, name="convert"),
+    # path('convert/', views.convert, name="convert"),
+    path('text2speech/', views.convert, name="convert"),
+    # path('', views.convert, name="convert"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

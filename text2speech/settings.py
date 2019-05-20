@@ -124,4 +124,4 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT= os.path.join(PROJECT_DIR, 'media')
 print(MEDIA_ROOT)
-MEDIA_URL= "/media/"
+MEDIA_URL= "/text2speech/media/"
